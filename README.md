@@ -1,2 +1,2 @@
-# rakennnusjarjestys
-Rakennusjärjestyksen tietomalli
+# Rakennusjärjestyksen tietomalli
+
