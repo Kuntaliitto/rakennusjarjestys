@@ -1,0 +1,217 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Ydin</title>
+<link href="../../css/ea.css" rel="stylesheet" type="text/css" />
+<script language="JavaScript" src="../../js/displayToc.js" type="text/javascript"></script>
+<script>
+
+  function switchProjectProperties() {
+			if (document.getElementById("proj00").style.display == "none") {
+				document.getElementById("proj00").style.display = "revert";
+				document.getElementById("proj01").style.display = "revert";
+				document.getElementById("proj02").style.display = "revert";
+				document.getElementById("proj03").style.display = "revert";
+				document.getElementById("proj04").style.display = "revert";
+				document.getElementById("proj05").style.display = "revert";
+			} else {
+				document.getElementById("proj00").style.display = "none";
+				document.getElementById("proj01").style.display = "none";
+				document.getElementById("proj02").style.display = "none";
+				document.getElementById("proj03").style.display = "none";
+				document.getElementById("proj04").style.display = "none";
+				document.getElementById("proj05").style.display = "none";
+			}
+}
+
+		function switchAdvancedProperties(){
+
+			if (document.getElementById("adv00").style.display == "none") {;
+				document.getElementById("adv00").style.display = "revert";
+				document.getElementById("adv01").style.display = "revert";
+			} else {
+				document.getElementById("adv00").style.display = "none";
+				document.getElementById("adv01").style.display = "none";
+			}
+		}
+		function initPage()
+        {			
+			var divs = document.getElementsByClassName("ObjectDetailsNotes");
+			for (var j = 0; j < divs.length; j++) {
+				var tmpStr = divs[j].innerHTML;
+				tmpStr = tmpStr.replace(/&gt;/g, ">");
+				tmpStr = tmpStr.replace(/&lt;/g, "<");
+
+				tmpStr = tmpStr.replace(/#gt;/g, "&gt;");
+				tmpStr = tmpStr.replace(/#lt;/g, "&lt;");
+
+				divs[j].innerHTML = tmpStr;
+			}
+
+            if (document.getElementById('TableGroup') != null)
+            {
+                toggleItem(document.getElementById('TableGroup').getElementsByTagName('li')[0].id.replace("Title", ""));
+            }
+
+        }
+</script>
+<style>
+
+</style>
+</head>
+<body onload="initPage();">
+<div class="section group" >
+
+		<div class="col span_2_of_2 header_frame">
+			<h1> Ydin </h1>
+			<!-- <img class="header_image" src="../../images/ea-banner.png" align="right" alt="Header Image" />-->
+			<img class="header_image" src="../../images/ea-banner.png" align="right" alt="Header Image" />
+		</div>
+		<div class="col span_2_of_2 breadcrumb_frame">
+			<p><a href="../EA1.html">Rakennettu ymparisto</a> / <a href="EA40.html">Yhteiset</a> / <a href="EA38.html">Ydin</a></p>
+		</div>
+			
+		<table class="contentmaintable">
+			<!-- <tfoot>
+				<tr>
+					<td>foot1</td>
+					<td>foot2</td>
+				</tr>
+			</tfoot> -->
+			<tbody>
+				<tr>
+					<td class="indexcell">
+						<div class="projectBrowserTitle">Project: </div>
+						<ul>
+<li><img src="../../images/175.png" alt="Diagram"/> <a href="EA26.html">Alueidenkäyttö</a></li>
+<li><img src="../../images/175.png" alt="Diagram"/> <a href="EA28.html">Apuluokat</a></li>
+<li><img src="../../images/175.png" alt="Diagram"/> <a href="EA30.html">Koodistot</a></li>
+<li><img src="../../images/175.png" alt="Diagram"/> <a href="EA32.html">Ominaisuuden arvot</a></li>
+<li><img src="../../images/175.png" alt="Diagram"/> <a href="EA34.html">Rakennetun ympäristön luvat</a></li>
+<li><img src="../../images/175.png" alt="Diagram"/> <a href="EA36.html">Tapahtumat</a></li>
+<li><img src="../../images/175.png" alt="Diagram"/> <a href="EA38.html">Ydin</a></li>
+<li><img src="../../images/5.png" alt="Class"/> <a href="EA42.html">AbstraktiAsiakirjanLaji</a></li>
+<li><img src="../../images/5.png" alt="Class"/> <a href="EA43.html">AbstraktiAsianElinkaaritila</a></li>
+<li><img src="../../images/5.png" alt="Class"/> <a href="EA44.html">AbstraktiKäsittelytapahtumanLaji</a></li>
+<li><img src="../../images/5.png" alt="Class"/> <a href="EA48.html">AbstraktiLähtotietoaineistonLaji</a></li>
+<li><img src="../../images/5.png" alt="Class"/> <a href="EA45.html">AbstraktiLisätiedonLaji</a></li>
+<li><img src="../../images/5.png" alt="Class"/> <a href="EA46.html">AbstraktiLupamääräyksenLaji</a></li>
+<li><img src="../../images/5.png" alt="Class"/> <a href="EA47.html">AbstraktiLuvanElinkaaritila</a></li>
+<li><img src="../../images/5.png" alt="Class"/> <a href="EA49.html">AbstraktiPoikkeamisenLaji</a></li>
+<li><img src="../../images/5.png" alt="Class"/> <a href="EA50.html">AbstraktiVuorovaikutustapahtumanLaji</a></li>
+<li><img src="../../images/5.png" alt="Class"/> <a href="EA51.html">Aikaväliarvo</a></li>
+<li><img src="../../images/5.png" alt="Class"/> <a href="EA52.html">Ajanhetkiarvo</a></li>
+<li><img src="../../images/5.png" alt="Class"/> <a href="EA56.html">Alueidenkäyttöasia</a></li>
+<li><img src="../../images/5.png" alt="Class"/> <a href="EA53.html">AlueidenkäyttöJaRakentamisasia</a></li>
+<li><img src="../../images/5.png" alt="Class"/> <a href="EA54.html">AlueidenkäyttöJaRakentamismääräys</a></li>
+<li><img src="../../images/5.png" alt="Class"/> <a href="EA55.html">AlueidenkäyttöJaRakentamispäätös</a></li>
+<li><img src="../../images/5.png" alt="Class"/> <a href="EA57.html">Alueidenkäyttöpäätös</a></li>
+<li><img src="../../images/5.png" alt="Class"/> <a href="EA58.html">Alueidenkäyttösuunnitelma</a></li>
+<li><img src="../../images/5.png" alt="Class"/> <a href="EA59.html">AlueidenkäyttösuunnitelmanHyväksymispäätös</a></li>
+<li><img src="../../images/5.png" alt="Class"/> <a href="EA60.html">Asiakirja</a></li>
+<li><img src="../../images/5.png" alt="Class"/> <a href="EA61.html">DigitaalinenAlkuperä</a></li>
+<li><img src="../../images/5.png" alt="Class"/> <a href="EA62.html">GeometriaArvo</a></li>
+<li><img src="../../images/5.png" alt="Class"/> <a href="EA70.html">Käsittelytapahtuma</a></li>
+<li><img src="../../images/5.png" alt="Class"/> <a href="EA66.html">KiinteistörekisteriyksikönLaji</a></li>
+<li><img src="../../images/5.png" alt="Class"/> <a href="EA67.html">Koodiarvo</a></li>
+<li><img src="../../images/5.png" alt="Class"/> <a href="EA68.html">Korkeuspiste</a></li>
+<li><img src="../../images/5.png" alt="Class"/> <a href="EA69.html">Korkeusväli</a></li>
+<li><img src="../../images/5.png" alt="Class"/> <a href="EA74.html">Lähtötietoaineisto</a></li>
+<li><img src="../../images/5.png" alt="Class"/> <a href="EA71.html">LainTaiAsetuksenMääräys</a></li>
+<li><img src="../../images/5.png" alt="Class"/> <a href="EA72.html">Lisätieto</a></li>
+<li><img src="../../images/5.png" alt="Class"/> <a href="EA73.html">Lupamääräys</a></li>
+<li><img src="../../images/5.png" alt="Class"/> <a href="EA75.html">MääräyksestäPoikkeaminen</a></li>
+<li><img src="../../images/5.png" alt="Class"/> <a href="EA76.html">NumeerinenArvo</a></li>
+<li><img src="../../images/5.png" alt="Class"/> <a href="EA77.html">NumeerinenArvovali</a></li>
+<li><img src="../../images/5.png" alt="Class"/> <a href="EA78.html">OikeusvaikutteisuudenLaji</a></li>
+<li><img src="../../images/5.png" alt="Class"/> <a href="EA79.html">OminaisuudenArvo</a></li>
+<li><img src="../../images/5.png" alt="Class"/> <a href="EA82.html">OsoitteenKäyttötarkoitus</a></li>
+<li><img src="../../images/5.png" alt="Class"/> <a href="EA83.html">Rajapiste</a></li>
+<li><img src="../../images/5.png" alt="Class"/> <a href="EA84.html">RakennetunYmpäristönKohde</a></li>
+<li><img src="../../images/5.png" alt="Class"/> <a href="EA85.html">RakennetunYmpäristönLupa</a></li>
+<li><img src="../../images/5.png" alt="Class"/> <a href="EA86.html">RakennetunYmpäristönLupaAsia</a></li>
+<li><img src="../../images/5.png" alt="Class"/> <a href="EA87.html">RakennetunYmpäristönLupahakemus</a></li>
+<li><img src="../../images/5.png" alt="Class"/> <a href="EA88.html">RakennetunYmpäristönLupapäätös</a></li>
+<li><img src="../../images/5.png" alt="Class"/> <a href="EA90.html">Säädösviite</a></li>
+<li><img src="../../images/5.png" alt="Class"/> <a href="EA89.html">SuunnitelmanLaatija</a></li>
+<li><img src="../../images/5.png" alt="Class"/> <a href="EA91.html">Tapahtuma</a></li>
+<li><img src="../../images/5.png" alt="Class"/> <a href="EA92.html">Tekstiarvo</a></li>
+<li><img src="../../images/5.png" alt="Class"/> <a href="EA93.html">Tietoryhmä</a></li>
+<li><img src="../../images/5.png" alt="Class"/> <a href="EA94.html">Tietoyksikkö</a></li>
+<li><img src="../../images/5.png" alt="Class"/> <a href="EA96.html">Tunnusarvo</a></li>
+<li><img src="../../images/5.png" alt="Class"/> <a href="EA97.html">VersioituObjekti</a></li>
+<li><img src="../../images/5.png" alt="Class"/> <a href="EA98.html">Vuorovaikutustapahtuma</a></li>
+<li><img src="../../images/8.png" alt="Interface"/> <a href="EA63.html">HallinnollinenAlue</a></li>
+<li><img src="../../images/8.png" alt="Interface"/> <a href="EA64.html">Henkilö</a></li>
+<li><img src="../../images/8.png" alt="Interface"/> <a href="EA65.html">Kiinteistö</a></li>
+<li><img src="../../images/8.png" alt="Interface"/> <a href="EA80.html">Organisaatio</a></li>
+<li><img src="../../images/8.png" alt="Interface"/> <a href="EA81.html">Osoite</a></li>
+<li><img src="../../images/8.png" alt="Interface"/> <a href="EA95.html">Toimija</a></li>
+</ul>
+
+					</td>
+					<td class="contentcell"><div class="PageBody">
+	<div class=diagram_image> 
+<img src="EA39.png" usemap="#EA39" border="0" />
+
+<MAP NAME="EA39">
+<area shape="rect" coords="53,459,143,512" href="EA93.html" target="_self">
+<area shape="rect" coords="252,551,432,636" href="EA72.html" target="_self">
+<area shape="rect" coords="220,442,403,512" href="EA54.html" target="_self">
+<area shape="rect" coords="472,551,596,606" href="EA79.html" target="_self">
+<area shape="rect" coords="53,266,212,351" href="EA94.html" target="_self">
+<area shape="rect" coords="892,124,1080,274" href="EA55.html" target="_self">
+<area shape="rect" coords="299,266,507,388" href="EA84.html" target="_self">
+<area shape="rect" coords="947,443,1080,488" href="EA64.html" target="_self">
+<area shape="rect" coords="820,323,1001,395" href="EA95.html" target="_self">
+<area shape="rect" coords="551,323,727,409" href="EA63.html" target="_self">
+<area shape="rect" coords="757,442,892,488" href="EA80.html" target="_self">
+<area shape="rect" coords="29,551,213,675" href="EA60.html" target="_self">
+<area shape="rect" coords="551,124,752,274" href="EA53.html" target="_self">
+<area shape="rect" coords="137,59,365,196" href="EA97.html" target="_self">
+</MAP>
+ </div>
+	<div class="ObjectTitle">Ydin : Class diagram</div>
+	<table border="0" cellpadding="0" cellspacing="0" class="ObjectDetails">
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic">Created:</td>
+			<td width="85%" class="ObjectDetailsValue">9/16/2020 10:01:27 PM</td>
+		</tr>
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic">Modified:</td>
+			<td width="85%" class="ObjectDetailsValue">3/3/2022 12:51:27 PM</td>
+		</tr>
+		<tr style="padding-top: 10px;">
+			<td width="15%" class="ObjectDetailsTopic"><button onclick="switchProjectProperties()"><img src="../../images/plus03.gif" align="absmiddle" id="proj" /></button>Project:</td>
+			<td width="85%" class="ObjectDetailsValue"></td>			
+		</tr>
+		<tr id="proj00" style="display: none;">
+			<td width="15%" class="ObjectDetailsTopic" style="padding-left: 18px;">Author:</td>
+			<td width="85%" class="ObjectDetailsValue">ior</td>
+		</tr>
+		<tr id="proj01" style="display: none;">
+			<td width="15%" class="ObjectDetailsTopic" style="padding-left: 18px;">Version:</td>
+			<td width="85%" class="ObjectDetailsValue">1.0</td>
+		</tr>
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic"><button onclick="switchAdvancedProperties()"><img src="../../images/plus03.gif" align="absmiddle" id="adv" /></button>Advanced:</td>
+			<td width="85%" class="ObjectDetailsValue"></td>			
+		</tr>
+		<tr id="adv00" style="display: none;">
+			<td width="15%" class="ObjectDetailsTopic" style="padding-left: 18px;">ID:</td>
+			<td width="85%" class="ObjectDetailsValue">{40EB80A5-88D9-404c-B1C2-3AE3F2009F50}</td>
+		</tr>
+	</table>
+	
+</div>
+
+ </td>
+				</tr>
+			</tbody>
+		</table>
+		
+</div>
+</body>
+</html>
+
