@@ -65,7 +65,7 @@
 				</ownedAttribute>
 				<generalization xmi:type="uml:Generalization" xmi:id="EAID_DC16CBC2_500E_4e71_906D_83CFEC9092DF" general="EAID_CCDEA216_16F7_47c8_9BFD_D0AFF7E8788F"/>
 			</packagedElement>
-			<packagedElement xmi:type="uml:Class" xmi:id="EAID_2E73D40B_55A1_4ae9_A03E_4507D631F12D" name="MääräyksenAluetyyppiRajoitus" visibility="public"/>
+			<packagedElement xmi:type="uml:Class" xmi:id="EAID_2E73D40B_55A1_4ae9_A03E_4507D631F12D" name="MääräyksenAluetyyppirajoitus" visibility="public"/>
 			<packagedElement xmi:type="uml:Class" xmi:id="EAID_BEB0DCFD_293A_4278_9E0C_70063838E4E3" name="MääräysSuunnittelutarvealueista" visibility="public">
 				<ownedAttribute xmi:type="uml:Property" xmi:id="EAID_88ADCBEC_0719_4953_A960_4CE2F06A15EE" name="kaikkiAsemakaavoittamatonAlue" visibility="public" isStatic="false" isReadOnly="false" isDerived="false" isOrdered="false" isUnique="true" isDerivedUnion="false">
 					<lowerValue xmi:type="uml:LiteralInteger" xmi:id="EAID_LI000019_0719_4953_A960_4CE2F06A15EE" value="1"/>
@@ -83,8 +83,14 @@
 				<memberEnd xmi:idref="EAID_dst6EC238_DAC9_473a_B607_74B4733695A4"/>
 				<memberEnd xmi:idref="EAID_src6EC238_DAC9_473a_B607_74B4733695A4"/>
 			</packagedElement>
+			<packagedElement xmi:type="uml:Class" xmi:id="EAID_BBF4A421_4DFD_450f_9C2C_5E33BD142C29" name="RakennusjäjestyksenAsiakirjanLaji" visibility="public">
+				<generalization xmi:type="uml:Generalization" xmi:id="EAID_C33E4D91_91B7_4479_B3E2_83A1248FC2F2" general="EAID_BC0DF6FD_991C_47a7_854E_8574C4F5E897"/>
+			</packagedElement>
 			<packagedElement xmi:type="uml:Class" xmi:id="EAID_6E1B9EA6_33B5_41ca_9B0F_FE2A4FD7653B" name="RakennusjärjestyksenAihepiiri" visibility="public"/>
 			<packagedElement xmi:type="uml:Class" xmi:id="EAID_52886490_F5E2_4bd3_9A02_B9EA90DAF864" name="RakennusjärjestyksenAvainsana" visibility="public"/>
+			<packagedElement xmi:type="uml:Class" xmi:id="EAID_1CC4B1B9_709C_460d_A906_BA8C02EFF160" name="RakennusjärjestyksenElinkaaritila" visibility="public">
+				<generalization xmi:type="uml:Generalization" xmi:id="EAID_CAD8EC99_9550_4bfa_9A55_E4CF22AF38A8" general="EAID_581B4F10_F6C1_4cd1_AA66_0AFDE39CA434"/>
+			</packagedElement>
 			<packagedElement xmi:type="uml:Class" xmi:id="EAID_FC8D08A8_831E_4951_9607_2A60E5832695" name="RakennusjarjestyksenHyväksymispäätös" visibility="public">
 				<generalization xmi:type="uml:Generalization" xmi:id="EAID_43140705_0B18_4e1e_9849_26F0265ABD7E" general="EAID_2E68FFCA_40A3_4484_A05F_0AE51FE89A21"/>
 				<ownedAttribute xmi:type="uml:Property" xmi:id="EAID_src769D6B_6A1D_4232_A0E9_CFFD4969145A" name="hyväksyttyRakennusjärjestys" visibility="public" association="EAID_78769D6B_6A1D_4232_A0E9_CFFD4969145A" isStatic="false" isReadOnly="false" isDerived="false" isOrdered="false" isUnique="true" isDerivedUnion="false" aggregation="none">
@@ -96,6 +102,9 @@
 			<packagedElement xmi:type="uml:Association" xmi:id="EAID_78769D6B_6A1D_4232_A0E9_CFFD4969145A" visibility="public">
 				<memberEnd xmi:idref="EAID_dst769D6B_6A1D_4232_A0E9_CFFD4969145A"/>
 				<memberEnd xmi:idref="EAID_src769D6B_6A1D_4232_A0E9_CFFD4969145A"/>
+			</packagedElement>
+			<packagedElement xmi:type="uml:Class" xmi:id="EAID_66381410_CFA9_4106_9584_1B2679A7B22E" name="RakennusjärjestyksenKäsittelytapahtumanLaji" visibility="public">
+				<generalization xmi:type="uml:Generalization" xmi:id="EAID_7BF63F00_2CD1_49dc_B342_F9A5486E1D6C" general="EAID_7FE1D815_70B5_467a_8F8E_A7A160F00708"/>
 			</packagedElement>
 			<packagedElement xmi:type="uml:Class" xmi:id="EAID_9AD30BF4_0CDB_4a25_8AA7_28826F5DD564" name="RakennusjärjestyksenMääräys" visibility="public">
 				<ownedAttribute xmi:type="uml:Property" xmi:id="EAID_43E5207A_AFC3_4683_8566_A09FD42EF02E" name="avainsana" visibility="public" isStatic="false" isReadOnly="false" isDerived="false" isOrdered="false" isUnique="true" isDerivedUnion="false">
@@ -122,6 +131,9 @@
 			</packagedElement>
 			<packagedElement xmi:type="uml:Usage" xmi:id="EAID_848743F6_DA9C_4bb6_8D73_86494D906592" visibility="public" supplier="EAID_E4EF52B0_2EED_4f82_8C7D_AEC49A344128" client="EAID_9AD30BF4_0CDB_4a25_8AA7_28826F5DD564"/>
 			<packagedElement xmi:type="uml:Usage" xmi:id="EAID_CCB5E30B_325B_47ca_98D3_754B8F26F453" visibility="public" supplier="EAID_AB822EBF_586A_4ab9_BB62_8D63C2F58A20" client="EAID_9AD30BF4_0CDB_4a25_8AA7_28826F5DD564"/>
+			<packagedElement xmi:type="uml:Class" xmi:id="EAID_403CAA8A_1798_4418_914D_470CB4A97A76" name="RakennusjärjestyksenVuorovaikutustapahtumanLaji" visibility="public">
+				<generalization xmi:type="uml:Generalization" xmi:id="EAID_D93D92FA_105A_4a03_AC71_6F32623359B7" general="EAID_D0E1693F_2554_45d1_9EC3_8B744317F1B8"/>
+			</packagedElement>
 			<packagedElement xmi:type="uml:Class" xmi:id="EAID_57B7F2AC_BE82_4d6a_A1D2_FB678F0C34F4" name="Rakennusjärjestys" visibility="public">
 				<ownedAttribute xmi:type="uml:Property" xmi:id="EAID_dst769D6B_6A1D_4232_A0E9_CFFD4969145A" name="hyväksymispäätös" visibility="public" association="EAID_78769D6B_6A1D_4232_A0E9_CFFD4969145A" isStatic="false" isReadOnly="false" isDerived="false" isOrdered="false" isUnique="true" isDerivedUnion="false" aggregation="none">
 					<type xmi:idref="EAID_FC8D08A8_831E_4951_9607_2A60E5832695"/>
@@ -204,10 +216,18 @@
 		<GML:FeatureType base_Class="EAID_32FB3457_4A6C_4880_8179_8BA9A9579F05" noPropertyType="false" isCollection="false" byValuePropertyType="false"/>
 		<GML:CodeList base_Class="EAID_2E73D40B_55A1_4ae9_A03E_4507D631F12D" asDictionary="true"/>
 		<GML:FeatureType base_Class="EAID_BEB0DCFD_293A_4278_9E0C_70063838E4E3" noPropertyType="false" isCollection="false" byValuePropertyType="false"/>
+		<GML:CodeList base_Class="EAID_BBF4A421_4DFD_450f_9C2C_5E33BD142C29" asDictionary="true"/>
+		<thecustomprofile:extensibility base_Class="EAID_BBF4A421_4DFD_450f_9C2C_5E33BD142C29" extensibility="http://inspire.ec.europa.eu/registry/extensibility/none"/>
 		<GML:CodeList base_Class="EAID_6E1B9EA6_33B5_41ca_9B0F_FE2A4FD7653B" asDictionary="true"/>
 		<GML:CodeList base_Class="EAID_52886490_F5E2_4bd3_9A02_B9EA90DAF864" asDictionary="true"/>
+		<GML:CodeList base_Class="EAID_1CC4B1B9_709C_460d_A906_BA8C02EFF160" asDictionary="true"/>
+		<thecustomprofile:extensibility base_Class="EAID_1CC4B1B9_709C_460d_A906_BA8C02EFF160" extensibility="http://inspire.ec.europa.eu/registry/extensibility/none"/>
 		<GML:FeatureType base_Class="EAID_FC8D08A8_831E_4951_9607_2A60E5832695" noPropertyType="false" isCollection="false" byValuePropertyType="false"/>
+		<GML:CodeList base_Class="EAID_66381410_CFA9_4106_9584_1B2679A7B22E" asDictionary="true"/>
+		<thecustomprofile:extensibility base_Class="EAID_66381410_CFA9_4106_9584_1B2679A7B22E" extensibility="http://inspire.ec.europa.eu/registry/extensibility/none"/>
 		<GML:FeatureType base_Class="EAID_9AD30BF4_0CDB_4a25_8AA7_28826F5DD564" noPropertyType="false" isCollection="false" byValuePropertyType="false"/>
+		<GML:CodeList base_Class="EAID_403CAA8A_1798_4418_914D_470CB4A97A76" asDictionary="true"/>
+		<thecustomprofile:extensibility base_Class="EAID_403CAA8A_1798_4418_914D_470CB4A97A76" extensibility="http://inspire.ec.europa.eu/registry/extensibility/none"/>
 		<GML:FeatureType base_Class="EAID_57B7F2AC_BE82_4d6a_A1D2_FB678F0C34F4" noPropertyType="false" isCollection="false" byValuePropertyType="false"/>
 		<GML:FeatureType base_Class="EAID_330670DC_8E7C_4e5e_8282_13D5EBC9FCE3" noPropertyType="false" isCollection="false" byValuePropertyType="false"/>
 		<GML:DataType base_Class="EAID_4AABA751_BB6D_407d_9CCD_098674055C5B" noPropertyType="false" isCollection="false"/>
@@ -234,7 +254,7 @@
 				<extendedProperties tagged="0" package_name="Rakennettu ymparisto"/>
 				<packageproperties version="1.0" owner="ior" xmiver="Enterprise Architect XMI 2.1/UML 2.1"/>
 				<paths xmlpath="Z:\rakennusjarjestys\looginenmalli\uml\rakennusjarjestys.xml"/>
-				<times created="2022-05-10 10:57:20" modified="2022-05-10 12:20:28" lastsavedate="2022-05-11 12:46:36"/>
+				<times created="2022-05-10 10:57:20" modified="2022-05-10 12:20:28" lastsavedate="2022-05-11 13:25:28"/>
 				<flags iscontrolled="1" isprotected="0" batchsave="0" batchload="0" usedtd="0" logxml="0" packageFlags="Recurse=1;"/>
 			</element>
 			<element xmi:idref="EAID_E4EF52B0_2EED_4f82_8C7D_AEC49A344128" xmi:type="uml:Class" name="AbstraktiSuureenArvo" scope="public">
@@ -482,10 +502,10 @@
 					<Generalization xmi:id="EAID_DC16CBC2_500E_4e71_906D_83CFEC9092DF" start="EAID_32FB3457_4A6C_4880_8179_8BA9A9579F05" end="EAID_CCDEA216_16F7_47c8_9BFD_D0AFF7E8788F"/>
 				</links>
 			</element>
-			<element xmi:idref="EAID_2E73D40B_55A1_4ae9_A03E_4507D631F12D" xmi:type="uml:Class" name="MääräyksenAluetyyppiRajoitus" scope="public">
+			<element xmi:idref="EAID_2E73D40B_55A1_4ae9_A03E_4507D631F12D" xmi:type="uml:Class" name="MääräyksenAluetyyppirajoitus" scope="public">
 				<model package="EAPK_471B98E1_C1CD_4d76_B9E4_B7433BF539DE" tpos="0" ea_localid="1498" ea_eleType="element"/>
 				<properties documentation="arvot:&#xA;&lt;ul&gt;&#xA;&#x9;&lt;li&gt;koskee asemakaavoittamattomia alueita&lt;/li&gt;&#xA;&#x9;&lt;li&gt;koskee asemakaavoitettuja alueita&lt;/li&gt;&#xA;&#x9;&lt;li&gt;koskee yleiskaavoittamattomia alueita&lt;/li&gt;&#xA;&#x9;&lt;li&gt;koskee yleiskaavoitettuja alueita&lt;/li&gt;&#xA;&#x9;&lt;li&gt;koskee ranta-alueita&lt;/li&gt;&#xA;&#x9;&lt;li&gt;koskee ranta-asemakaava-alueita&lt;/li&gt;&#xA;&#x9;&lt;li&gt;koskee ranta-osayleiskaava-alueita&lt;/li&gt;&#xA;&#x9;&lt;li&gt;koskee taajama-alueita&lt;/li&gt;&#xA;&#x9;&lt;li&gt;koskee haja-asutusalueita&lt;/li&gt;&#xA;&#x9;&lt;li&gt;koskee maa- ja mets&amp;#228;talousvaltaisia alueita&lt;/li&gt;&#xA;&lt;/ul&gt;" isSpecification="false" sType="Class" nType="0" scope="public" stereotype="CodeList" isRoot="false" isLeaf="false" isAbstract="false" isActive="false"/>
-				<project author="giy" version="1.0" phase="1.0" created="2022-05-10 12:30:00" modified="2022-05-10 12:38:09" complexity="1" status="Proposed"/>
+				<project author="giy" version="1.0" phase="1.0" created="2022-05-10 12:30:00" modified="2022-05-11 13:24:47" complexity="1" status="Proposed"/>
 				<code product_name="Java" gentype="Java"/>
 				<style appearance="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
 				<tags>
@@ -530,6 +550,23 @@
 					<Generalization xmi:id="EAID_B0548628_56BA_4afc_A6CB_640815D91D85" start="EAID_BEB0DCFD_293A_4278_9E0C_70063838E4E3" end="EAID_9AD30BF4_0CDB_4a25_8AA7_28826F5DD564"/>
 				</links>
 			</element>
+			<element xmi:idref="EAID_BBF4A421_4DFD_450f_9C2C_5E33BD142C29" xmi:type="uml:Class" name="RakennusjäjestyksenAsiakirjanLaji" scope="public">
+				<model package="EAPK_471B98E1_C1CD_4d76_B9E4_B7433BF539DE" tpos="0" ea_localid="1508" ea_eleType="element"/>
+				<properties isSpecification="false" sType="Class" nType="0" scope="public" stereotype="CodeList" isRoot="false" isLeaf="false" isAbstract="false" isActive="false"/>
+				<project author="ior" version="1.0" phase="1.0" created="2022-05-11 13:23:41" modified="2022-05-11 13:24:01" complexity="1" status="Proposed"/>
+				<code product_name="Java" gentype="Java"/>
+				<style appearance="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
+				<tags>
+					<tag xmi:id="EAID_0BE3FA2A_1A09_4e1a_A159_6CE366D153A3" name="asDictionary" value="true#NOTES#Values: true,false&#xA;Default: false&#xA;Description: If 'false', the class will be mapped to an XSDsimpleType. Else, it will be exported as an external dictionary.&#xA;" modelElement="EAID_BBF4A421_4DFD_450f_9C2C_5E33BD142C29"/>
+					<tag xmi:id="EAID_D80E6ACC_660B_6966_951F_4953F6EA97F3" name="defaultCodeSpace" value="#NOTES#Description: Default value for the URI representing the dictionary &#xA;" modelElement="EAID_BBF4A421_4DFD_450f_9C2C_5E33BD142C29"/>
+					<tag xmi:id="EAID_891E672F_6EF3_4ccc_9251_7D000B6B244C" name="extensibility" value="http://inspire.ec.europa.eu/registry/extensibility/none" modelElement="EAID_BBF4A421_4DFD_450f_9C2C_5E33BD142C29"/>
+				</tags>
+				<xrefs value="$XREFPROP=$XID={27A4D4F8-4B91-4aec-90DC-AADBB1F81B00}$XID;$NAM=Stereotypes$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=CodeList;FQName=GML::CodeList;@ENDSTEREO;$DES;$CLT={BBF4A421-4DFD-450f-9C2C-5E33BD142C29}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
+				<extendedProperties tagged="0" package_name="Rakennusjärjestys" ea_classified="{EE8FB5A2-628B-4c80-8886-E6F006084134}"/>
+				<links>
+					<Generalization xmi:id="EAID_C33E4D91_91B7_4479_B3E2_83A1248FC2F2" start="EAID_BBF4A421_4DFD_450f_9C2C_5E33BD142C29" end="EAID_BC0DF6FD_991C_47a7_854E_8574C4F5E897"/>
+				</links>
+			</element>
 			<element xmi:idref="EAID_6E1B9EA6_33B5_41ca_9B0F_FE2A4FD7653B" xmi:type="uml:Class" name="RakennusjärjestyksenAihepiiri" scope="public">
 				<model package="EAPK_471B98E1_C1CD_4d76_B9E4_B7433BF539DE" tpos="0" ea_localid="1491" ea_eleType="element"/>
 				<properties isSpecification="false" sType="Class" nType="0" scope="public" stereotype="CodeList" isRoot="false" isLeaf="false" isAbstract="false" isActive="false"/>
@@ -556,6 +593,23 @@
 				<xrefs value="$XREFPROP=$XID={7F0D9B52-2251-4460-8523-726591D46382}$XID;$NAM=Stereotypes$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=CodeList;FQName=GML::CodeList;@ENDSTEREO;$DES;$CLT={52886490-F5E2-4bd3-9A02-B9EA90DAF864}$CLT;$ENDXREF;"/>
 				<extendedProperties tagged="0" package_name="Rakennusjärjestys" ea_attsclassified="{43E5207A-AFC3-4683-8566-A09FD42EF02E}"/>
 			</element>
+			<element xmi:idref="EAID_1CC4B1B9_709C_460d_A906_BA8C02EFF160" xmi:type="uml:Class" name="RakennusjärjestyksenElinkaaritila" scope="public">
+				<model package="EAPK_471B98E1_C1CD_4d76_B9E4_B7433BF539DE" tpos="0" ea_localid="1507" ea_eleType="element"/>
+				<properties isSpecification="false" sType="Class" nType="0" scope="public" stereotype="CodeList" isRoot="false" isLeaf="false" isAbstract="false" isActive="false"/>
+				<project author="ior" version="1.0" phase="1.0" created="2022-05-11 13:22:49" modified="2022-05-11 13:23:11" complexity="1" status="Proposed"/>
+				<code product_name="Java" gentype="Java"/>
+				<style appearance="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
+				<tags>
+					<tag xmi:id="EAID_0BE3FA2A_1A09_4e1a_845F_A046636973FE" name="asDictionary" value="true#NOTES#Values: true,false&#xA;Default: false&#xA;Description: If 'false', the class will be mapped to an XSDsimpleType. Else, it will be exported as an external dictionary.&#xA;" modelElement="EAID_1CC4B1B9_709C_460d_A906_BA8C02EFF160"/>
+					<tag xmi:id="EAID_D80E6ACC_660B_6966_9316_80315C475764" name="defaultCodeSpace" value="#NOTES#Description: Default value for the URI representing the dictionary &#xA;" modelElement="EAID_1CC4B1B9_709C_460d_A906_BA8C02EFF160"/>
+					<tag xmi:id="EAID_01D89B76_3E68_4b6e_BD42_464E28000CC9" name="extensibility" value="http://inspire.ec.europa.eu/registry/extensibility/none" modelElement="EAID_1CC4B1B9_709C_460d_A906_BA8C02EFF160"/>
+				</tags>
+				<xrefs value="$XREFPROP=$XID={E6B32C2D-AF5B-4e2c-AE49-72C9AD5E49C7}$XID;$NAM=Stereotypes$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=CodeList;FQName=GML::CodeList;@ENDSTEREO;$DES;$CLT={1CC4B1B9-709C-460d-A906-BA8C02EFF160}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
+				<extendedProperties tagged="0" package_name="Rakennusjärjestys"/>
+				<links>
+					<Generalization xmi:id="EAID_CAD8EC99_9550_4bfa_9A55_E4CF22AF38A8" start="EAID_1CC4B1B9_709C_460d_A906_BA8C02EFF160" end="EAID_581B4F10_F6C1_4cd1_AA66_0AFDE39CA434"/>
+				</links>
+			</element>
 			<element xmi:idref="EAID_FC8D08A8_831E_4951_9607_2A60E5832695" xmi:type="uml:Class" name="RakennusjarjestyksenHyväksymispäätös" scope="public">
 				<model package="EAPK_471B98E1_C1CD_4d76_B9E4_B7433BF539DE" tpos="0" ea_localid="1486" ea_eleType="element"/>
 				<properties isSpecification="false" sType="Class" nType="0" scope="public" stereotype="FeatureType" isRoot="false" isLeaf="false" isAbstract="false" isActive="false"/>
@@ -572,6 +626,23 @@
 				<links>
 					<Generalization xmi:id="EAID_43140705_0B18_4e1e_9849_26F0265ABD7E" start="EAID_FC8D08A8_831E_4951_9607_2A60E5832695" end="EAID_2E68FFCA_40A3_4484_A05F_0AE51FE89A21"/>
 					<Association xmi:id="EAID_78769D6B_6A1D_4232_A0E9_CFFD4969145A" start="EAID_57B7F2AC_BE82_4d6a_A1D2_FB678F0C34F4" end="EAID_FC8D08A8_831E_4951_9607_2A60E5832695"/>
+				</links>
+			</element>
+			<element xmi:idref="EAID_66381410_CFA9_4106_9584_1B2679A7B22E" xmi:type="uml:Class" name="RakennusjärjestyksenKäsittelytapahtumanLaji" scope="public">
+				<model package="EAPK_471B98E1_C1CD_4d76_B9E4_B7433BF539DE" tpos="0" ea_localid="1506" ea_eleType="element"/>
+				<properties isSpecification="false" sType="Class" nType="0" scope="public" stereotype="CodeList" isRoot="false" isLeaf="false" isAbstract="false" isActive="false"/>
+				<project author="ior" version="1.0" phase="1.0" created="2022-05-11 13:21:51" modified="2022-05-11 13:22:20" complexity="1" status="Proposed"/>
+				<code product_name="Java" gentype="Java"/>
+				<style appearance="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
+				<tags>
+					<tag xmi:id="EAID_0BE3FA2A_1A09_4e1a_91BE_684A97D5E373" name="asDictionary" value="true#NOTES#Values: true,false&#xA;Default: false&#xA;Description: If 'false', the class will be mapped to an XSDsimpleType. Else, it will be exported as an external dictionary.&#xA;" modelElement="EAID_66381410_CFA9_4106_9584_1B2679A7B22E"/>
+					<tag xmi:id="EAID_D80E6ACC_660B_6966_9EE4_2B636DB5EB1F" name="defaultCodeSpace" value="#NOTES#Description: Default value for the URI representing the dictionary &#xA;" modelElement="EAID_66381410_CFA9_4106_9584_1B2679A7B22E"/>
+					<tag xmi:id="EAID_01D89B76_3E68_4b6e_8E20_808FF9D89355" name="extensibility" value="http://inspire.ec.europa.eu/registry/extensibility/none" modelElement="EAID_66381410_CFA9_4106_9584_1B2679A7B22E"/>
+				</tags>
+				<xrefs value="$XREFPROP=$XID={ADEFC99D-6FC5-4d90-963E-3140283251DE}$XID;$NAM=Stereotypes$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=CodeList;FQName=GML::CodeList;@ENDSTEREO;$DES;$CLT={66381410-CFA9-4106-9584-1B2679A7B22E}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
+				<extendedProperties tagged="0" package_name="Rakennusjärjestys"/>
+				<links>
+					<Generalization xmi:id="EAID_7BF63F00_2CD1_49dc_B342_F9A5486E1D6C" start="EAID_66381410_CFA9_4106_9584_1B2679A7B22E" end="EAID_7FE1D815_70B5_467a_8F8E_A7A160F00708"/>
 				</links>
 			</element>
 			<element xmi:idref="EAID_9AD30BF4_0CDB_4a25_8AA7_28826F5DD564" xmi:type="uml:Class" name="RakennusjärjestyksenMääräys" scope="public">
@@ -654,6 +725,23 @@
 					<Usage xmi:id="EAID_848743F6_DA9C_4bb6_8D73_86494D906592" start="EAID_9AD30BF4_0CDB_4a25_8AA7_28826F5DD564" end="EAID_E4EF52B0_2EED_4f82_8C7D_AEC49A344128"/>
 					<Usage xmi:id="EAID_CCB5E30B_325B_47ca_98D3_754B8F26F453" start="EAID_9AD30BF4_0CDB_4a25_8AA7_28826F5DD564" end="EAID_AB822EBF_586A_4ab9_BB62_8D63C2F58A20"/>
 					<Generalization xmi:id="EAID_B0548628_56BA_4afc_A6CB_640815D91D85" start="EAID_BEB0DCFD_293A_4278_9E0C_70063838E4E3" end="EAID_9AD30BF4_0CDB_4a25_8AA7_28826F5DD564"/>
+				</links>
+			</element>
+			<element xmi:idref="EAID_403CAA8A_1798_4418_914D_470CB4A97A76" xmi:type="uml:Class" name="RakennusjärjestyksenVuorovaikutustapahtumanLaji" scope="public">
+				<model package="EAPK_471B98E1_C1CD_4d76_B9E4_B7433BF539DE" tpos="0" ea_localid="1505" ea_eleType="element"/>
+				<properties isSpecification="false" sType="Class" nType="0" scope="public" stereotype="CodeList" isRoot="false" isLeaf="false" isAbstract="false" isActive="false"/>
+				<project author="ior" version="1.0" phase="1.0" created="2022-05-11 13:20:49" modified="2022-05-11 13:21:26" complexity="1" status="Proposed"/>
+				<code product_name="Java" gentype="Java"/>
+				<style appearance="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
+				<tags>
+					<tag xmi:id="EAID_0BE3FA2A_1A09_4e1a_84B3_9DA9D1112991" name="asDictionary" value="true#NOTES#Values: true,false&#xA;Default: false&#xA;Description: If 'false', the class will be mapped to an XSDsimpleType. Else, it will be exported as an external dictionary.&#xA;" modelElement="EAID_403CAA8A_1798_4418_914D_470CB4A97A76"/>
+					<tag xmi:id="EAID_D80E6ACC_660B_6966_BF24_337752DBCAB1" name="defaultCodeSpace" value="#NOTES#Description: Default value for the URI representing the dictionary &#xA;" modelElement="EAID_403CAA8A_1798_4418_914D_470CB4A97A76"/>
+					<tag xmi:id="EAID_4BDA6221_0573_4db2_8046_A0B7C129A914" name="extensibility" value="http://inspire.ec.europa.eu/registry/extensibility/none" modelElement="EAID_403CAA8A_1798_4418_914D_470CB4A97A76"/>
+				</tags>
+				<xrefs value="$XREFPROP=$XID={BDD609E4-C0FB-4ce2-B513-EC872CA287FE}$XID;$NAM=Stereotypes$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=CodeList;FQName=GML::CodeList;@ENDSTEREO;$DES;$CLT={403CAA8A-1798-4418-914D-470CB4A97A76}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
+				<extendedProperties tagged="0" package_name="Rakennusjärjestys"/>
+				<links>
+					<Generalization xmi:id="EAID_D93D92FA_105A_4a03_AC71_6F32623359B7" start="EAID_403CAA8A_1798_4418_914D_470CB4A97A76" end="EAID_D0E1693F_2554_45d1_9EC3_8B744317F1B8"/>
 				</links>
 			</element>
 			<element xmi:idref="EAID_57B7F2AC_BE82_4d6a_A1D2_FB678F0C34F4" xmi:type="uml:Class" name="Rakennusjärjestys" scope="public">
@@ -1200,6 +1288,74 @@
 				<xrefs/>
 				<tags/>
 			</connector>
+			<connector xmi:idref="EAID_C33E4D91_91B7_4479_B3E2_83A1248FC2F2">
+				<source xmi:idref="EAID_BBF4A421_4DFD_450f_9C2C_5E33BD142C29">
+					<model ea_localid="1508" type="Class" name="RakennusjäjestyksenAsiakirjanLaji"/>
+					<role visibility="Public" targetScope="instance"/>
+					<type aggregation="none" containment="Unspecified"/>
+					<constraints/>
+					<modifiers isOrdered="false" changeable="none" isNavigable="false"/>
+					<style value="Union=0;Derived=0;AllowDuplicates=0;"/>
+					<documentation/>
+					<xrefs/>
+					<tags/>
+				</source>
+				<target xmi:idref="EAID_BC0DF6FD_991C_47a7_854E_8574C4F5E897">
+					<model ea_localid="1428" type="Class" name="AbstraktiAsiakirjanLaji"/>
+					<role visibility="Public" targetScope="instance"/>
+					<type aggregation="none" containment="Unspecified"/>
+					<constraints/>
+					<modifiers isOrdered="false" changeable="none" isNavigable="true"/>
+					<style value="Union=0;Derived=0;AllowDuplicates=0;"/>
+					<documentation/>
+					<xrefs/>
+					<tags/>
+				</target>
+				<model ea_localid="1795"/>
+				<properties ea_type="Generalization" direction="Source -&gt; Destination"/>
+				<parameterSubstitutions/>
+				<documentation/>
+				<appearance linemode="3" linecolor="-1" linewidth="0" seqno="0" headStyle="0" lineStyle="0"/>
+				<labels/>
+				<extendedProperties virtualInheritance="0"/>
+				<style/>
+				<xrefs/>
+				<tags/>
+			</connector>
+			<connector xmi:idref="EAID_CAD8EC99_9550_4bfa_9A55_E4CF22AF38A8">
+				<source xmi:idref="EAID_1CC4B1B9_709C_460d_A906_BA8C02EFF160">
+					<model ea_localid="1507" type="Class" name="RakennusjärjestyksenElinkaaritila"/>
+					<role visibility="Public" targetScope="instance"/>
+					<type aggregation="none" containment="Unspecified"/>
+					<constraints/>
+					<modifiers isOrdered="false" changeable="none" isNavigable="false"/>
+					<style value="Union=0;Derived=0;AllowDuplicates=0;"/>
+					<documentation/>
+					<xrefs/>
+					<tags/>
+				</source>
+				<target xmi:idref="EAID_581B4F10_F6C1_4cd1_AA66_0AFDE39CA434">
+					<model ea_localid="1429" type="Class" name="AbstraktiAsianElinkaaritila"/>
+					<role visibility="Public" targetScope="instance"/>
+					<type aggregation="none" containment="Unspecified"/>
+					<constraints/>
+					<modifiers isOrdered="false" changeable="none" isNavigable="true"/>
+					<style value="Union=0;Derived=0;AllowDuplicates=0;"/>
+					<documentation/>
+					<xrefs/>
+					<tags/>
+				</target>
+				<model ea_localid="1794"/>
+				<properties ea_type="Generalization" direction="Source -&gt; Destination"/>
+				<parameterSubstitutions/>
+				<documentation/>
+				<appearance linemode="3" linecolor="-1" linewidth="0" seqno="0" headStyle="0" lineStyle="0"/>
+				<labels/>
+				<extendedProperties virtualInheritance="0"/>
+				<style/>
+				<xrefs/>
+				<tags/>
+			</connector>
 			<connector xmi:idref="EAID_43140705_0B18_4e1e_9849_26F0265ABD7E">
 				<source xmi:idref="EAID_FC8D08A8_831E_4951_9607_2A60E5832695">
 					<model ea_localid="1486" type="Class" name="RakennusjarjestyksenHyväksymispäätös"/>
@@ -1269,6 +1425,40 @@
 				<xrefs/>
 				<tags/>
 			</connector>
+			<connector xmi:idref="EAID_7BF63F00_2CD1_49dc_B342_F9A5486E1D6C">
+				<source xmi:idref="EAID_66381410_CFA9_4106_9584_1B2679A7B22E">
+					<model ea_localid="1506" type="Class" name="RakennusjärjestyksenKäsittelytapahtumanLaji"/>
+					<role visibility="Public" targetScope="instance"/>
+					<type aggregation="none" containment="Unspecified"/>
+					<constraints/>
+					<modifiers isOrdered="false" changeable="none" isNavigable="false"/>
+					<style value="Union=0;Derived=0;AllowDuplicates=0;"/>
+					<documentation/>
+					<xrefs/>
+					<tags/>
+				</source>
+				<target xmi:idref="EAID_7FE1D815_70B5_467a_8F8E_A7A160F00708">
+					<model ea_localid="1430" type="Class" name="AbstraktiKäsittelytapahtumanLaji"/>
+					<role visibility="Public" targetScope="instance"/>
+					<type aggregation="none" containment="Unspecified"/>
+					<constraints/>
+					<modifiers isOrdered="false" changeable="none" isNavigable="true"/>
+					<style value="Union=0;Derived=0;AllowDuplicates=0;"/>
+					<documentation/>
+					<xrefs/>
+					<tags/>
+				</target>
+				<model ea_localid="1793"/>
+				<properties ea_type="Generalization" direction="Source -&gt; Destination"/>
+				<parameterSubstitutions/>
+				<documentation/>
+				<appearance linemode="3" linecolor="-1" linewidth="0" seqno="0" headStyle="0" lineStyle="0"/>
+				<labels/>
+				<extendedProperties virtualInheritance="0"/>
+				<style/>
+				<xrefs/>
+				<tags/>
+			</connector>
 			<connector xmi:idref="EAID_53D9C62D_CA32_446e_86F5_DD09C6606813">
 				<source xmi:idref="EAID_9AD30BF4_0CDB_4a25_8AA7_28826F5DD564">
 					<model ea_localid="1488" type="Class" name="RakennusjärjestyksenMääräys"/>
@@ -1333,6 +1523,40 @@
 				<appearance linemode="3" linecolor="-1" linewidth="0" seqno="0" headStyle="0" lineStyle="0"/>
 				<labels mb="«use»"/>
 				<extendedProperties conditional="«use»" virtualInheritance="0"/>
+				<style/>
+				<xrefs/>
+				<tags/>
+			</connector>
+			<connector xmi:idref="EAID_D93D92FA_105A_4a03_AC71_6F32623359B7">
+				<source xmi:idref="EAID_403CAA8A_1798_4418_914D_470CB4A97A76">
+					<model ea_localid="1505" type="Class" name="RakennusjärjestyksenVuorovaikutustapahtumanLaji"/>
+					<role visibility="Public" targetScope="instance"/>
+					<type aggregation="none" containment="Unspecified"/>
+					<constraints/>
+					<modifiers isOrdered="false" changeable="none" isNavigable="false"/>
+					<style value="Union=0;Derived=0;AllowDuplicates=0;"/>
+					<documentation/>
+					<xrefs/>
+					<tags/>
+				</source>
+				<target xmi:idref="EAID_D0E1693F_2554_45d1_9EC3_8B744317F1B8">
+					<model ea_localid="1436" type="Class" name="AbstraktiVuorovaikutustapahtumanLaji"/>
+					<role visibility="Public" targetScope="instance"/>
+					<type aggregation="none" containment="Unspecified"/>
+					<constraints/>
+					<modifiers isOrdered="false" changeable="none" isNavigable="true"/>
+					<style value="Union=0;Derived=0;AllowDuplicates=0;"/>
+					<documentation/>
+					<xrefs/>
+					<tags/>
+				</target>
+				<model ea_localid="1792"/>
+				<properties ea_type="Generalization" direction="Source -&gt; Destination"/>
+				<parameterSubstitutions/>
+				<documentation/>
+				<appearance linemode="3" linecolor="-1" linewidth="0" seqno="0" headStyle="0" lineStyle="0"/>
+				<labels/>
+				<extendedProperties virtualInheritance="0"/>
 				<style/>
 				<xrefs/>
 				<tags/>
@@ -1541,6 +1765,17 @@
 				</packagedElement>
 				<packagedElement xmi:type="uml:Extension" xmi:id="Usage_use" name="A_Usage_use" memberEnd="extension_use use-base_Usage">
 					<ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="extension_use" name="extension_use" type="use" isComposite="true" lower="0" upper="1" memberEnd="extension_use use-base_Usage"/>
+				</packagedElement>
+				<packagedElement xmi:type="uml:Stereotype" xmi:id="extensibility" name="extensibility">
+					<ownedAttribute xmi:type="uml:Property" xmi:id="extensibility-base_Class" name="base_Class" association="Class_extensibility">
+						<type href="http://schema.omg.org/spec/UML/2.1/Class"/>
+					</ownedAttribute>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="extensibility-extensibility" name="extensibility">
+						<type href="http://schema.omg.org/spec/UML/2.1/String"/>
+					</ownedAttribute>
+				</packagedElement>
+				<packagedElement xmi:type="uml:Extension" xmi:id="Class_extensibility" name="A_Class_extensibility" memberEnd="extension_extensibility extensibility-base_Class">
+					<ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="extension_extensibility" name="extension_extensibility" type="extensibility" isComposite="true" lower="0" upper="1" memberEnd="extension_extensibility extensibility-base_Class"/>
 				</packagedElement>
 			</uml:Profile>
 			<uml:Profile xmlns:uml="http://schema.omg.org/spec/UML/2.1/" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmi:version="2.1" xmi:id="1BE46C37-5" nsPrefix="GML" name="GML" metamodelReference="mmref01">
@@ -1790,19 +2025,31 @@
 			<diagram xmi:id="EAID_6F03FFE3_EC9A_49e2_B508_419AB4EE4F48">
 				<model package="EAPK_471B98E1_C1CD_4d76_B9E4_B7433BF539DE" localID="975" owner="EAPK_471B98E1_C1CD_4d76_B9E4_B7433BF539DE"/>
 				<properties name="Koodistot" type="Logical"/>
-				<project author="ior" version="1.0" created="2022-05-10 11:12:27" modified="2022-05-11 12:33:14"/>
+				<project author="ior" version="1.0" created="2022-05-10 11:12:27" modified="2022-05-11 13:24:04"/>
 				<style1 value="ShowPrivate=1;ShowProtected=1;ShowPublic=1;HideRelationships=0;Locked=0;Border=1;HighlightForeign=1;PackageContents=1;SequenceNotes=0;ScalePrintImage=0;PPgs.cx=0;PPgs.cy=0;DocSize.cx=846;DocSize.cy=1098;ShowDetails=0;Orientation=P;Zoom=100;ShowTags=0;OpParams=1;VisibleAttributeDetail=0;ShowOpRetType=1;ShowIcons=1;CollabNums=0;HideProps=0;ShowReqs=0;ShowCons=0;PaperSize=1;HideParents=0;UseAlias=0;HideAtts=0;HideOps=0;HideStereo=0;HideElemStereo=0;ShowTests=0;ShowMaint=0;ConnectorNotation=UML 2.1;ExplicitNavigability=0;ShowShape=1;AllDockable=0;AdvancedElementProps=1;AdvancedFeatureProps=1;AdvancedConnectorProps=1;m_bElementClassifier=1;SPT=1;ShowNotes=0;SuppressBrackets=0;SuppConnectorLabels=0;PrintPageHeadFoot=0;ShowAsList=0;"/>
-				<style2 value="ExcludeRTF=0;DocAll=0;HideQuals=0;AttPkg=1;ShowTests=0;ShowMaint=0;SuppressFOC=1;MatrixActive=0;SwimlanesActive=1;KanbanActive=0;MatrixLineWidth=1;MatrixLineClr=0;MatrixLocked=0;TConnectorNotation=UML 2.1;TExplicitNavigability=0;AdvancedElementProps=1;AdvancedFeatureProps=1;AdvancedConnectorProps=1;m_bElementClassifier=1;SPT=1;MDGDgm=;STBLDgm=;ShowNotes=0;VisibleAttributeDetail=0;ShowOpRetType=1;SuppressBrackets=0;SuppConnectorLabels=0;PrintPageHeadFoot=0;ShowAsList=0;SuppressedCompartments=;Theme=:119;SaveTag=80AF5A8D;"/>
+				<style2 value="ExcludeRTF=0;DocAll=0;HideQuals=0;AttPkg=1;ShowTests=0;ShowMaint=0;SuppressFOC=1;MatrixActive=0;SwimlanesActive=1;KanbanActive=0;MatrixLineWidth=1;MatrixLineClr=0;MatrixLocked=0;TConnectorNotation=UML 2.1;TExplicitNavigability=0;AdvancedElementProps=1;AdvancedFeatureProps=1;AdvancedConnectorProps=1;m_bElementClassifier=1;SPT=1;MDGDgm=;STBLDgm=;ShowNotes=0;VisibleAttributeDetail=0;ShowOpRetType=1;SuppressBrackets=0;SuppConnectorLabels=0;PrintPageHeadFoot=0;ShowAsList=0;SuppressedCompartments=;Theme=:119;SaveTag=49CA8C9A;"/>
 				<swimlanes value="locked=false;orientation=0;width=0;inbar=false;names=false;color=-1;bold=false;fcol=0;tcol=-1;ofCol=-1;ufCol=-1;hl=1;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-13,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Calibri,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;"/>
 				<matrixitems value="locked=false;matrixactive=false;swimlanesactive=true;kanbanactive=false;width=1;clrLine=0;"/>
 				<extendedProperties/>
 				<persistentstyle value="DGS=On=0:CNT=8:W=120:H=40:SG=0:SGH=0:AEB=0:;AR=0;DCL=0;"/>
 				<xrefs/>
 				<elements>
-					<element geometry="Left=267;Top=217;Right=427;Bottom=294;" subject="EAID_9E310967_EC81_4b93_8B0F_854D9543968A" seqno="1" style="NSL=0;BCol=-1;BFol=-1;LCol=-1;LWth=-1;fontsz=0;bold=0;black=0;italic=0;ul=0;charset=0;pitch=0;HideIcon=0;DUID=742AF682;ImageID=0;Tag=1;AttCustom=0;OpCustom=0;TagInh=1;RzO=1;"/>
-					<element geometry="Left=39;Top=217;Right=217;Bottom=294;" subject="EAID_2E73D40B_55A1_4ae9_A03E_4507D631F12D" seqno="2" style="NSL=0;BCol=-1;BFol=-1;LCol=-1;LWth=-1;fontsz=0;bold=0;black=0;italic=0;ul=0;charset=0;pitch=0;HideIcon=0;DUID=1A1BD560;ImageID=0;Tag=1;AttCustom=0;OpCustom=0;TagInh=1;RzO=1;"/>
-					<element geometry="Left=262;Top=49;Right=422;Bottom=126;" subject="EAID_52886490_F5E2_4bd3_9A02_B9EA90DAF864" seqno="3" style="DUID=98EB5AE4;NSL=0;BCol=-1;BFol=-1;LCol=-1;LWth=-1;fontsz=0;bold=0;black=0;italic=0;ul=0;charset=0;pitch=0;HideIcon=0;Tag=1;AttCustom=0;OpCustom=0;TagInh=1;RzO=1;"/>
-					<element geometry="Left=46;Top=49;Right=209;Bottom=126;" subject="EAID_6E1B9EA6_33B5_41ca_9B0F_FE2A4FD7653B" seqno="4" style="DUID=F3117237;NSL=0;BCol=-1;BFol=-1;LCol=-1;LWth=-1;fontsz=0;bold=0;black=0;italic=0;ul=0;charset=0;pitch=0;HideIcon=0;Tag=1;AttCustom=0;OpCustom=0;TagInh=1;RzO=1;"/>
+					<element geometry="Left=404;Top=799;Right=702;Bottom=889;" subject="EAID_BBF4A421_4DFD_450f_9C2C_5E33BD142C29" seqno="1" style="NSL=0;BCol=-1;BFol=-1;LCol=-1;LWth=-1;fontsz=0;bold=0;black=0;italic=0;ul=0;charset=0;pitch=0;HideIcon=0;Tag=1;AttCustom=0;OpCustom=0;TagInh=1;RzO=1;DUID=E969885F;ImageID=0;"/>
+					<element geometry="Left=42;Top=798;Right=360;Bottom=888;" subject="EAID_1CC4B1B9_709C_460d_A906_BA8C02EFF160" seqno="2" style="NSL=0;BCol=-1;BFol=-1;LCol=-1;LWth=-1;fontsz=0;bold=0;black=0;italic=0;ul=0;charset=0;pitch=0;HideIcon=0;Tag=1;AttCustom=0;OpCustom=0;TagInh=1;RzO=1;DUID=3A985A74;ImageID=0;"/>
+					<element geometry="Left=401;Top=502;Right=705;Bottom=592;" subject="EAID_66381410_CFA9_4106_9584_1B2679A7B22E" seqno="3" style="NSL=0;BCol=-1;BFol=-1;LCol=-1;LWth=-1;fontsz=0;bold=0;black=0;italic=0;ul=0;charset=0;pitch=0;HideIcon=0;Tag=1;AttCustom=0;OpCustom=0;TagInh=1;RzO=1;DUID=6CB945EE;ImageID=0;"/>
+					<element geometry="Left=42;Top=502;Right=357;Bottom=592;" subject="EAID_403CAA8A_1798_4418_914D_470CB4A97A76" seqno="4" style="NSL=0;BCol=-1;BFol=-1;LCol=-1;LWth=-1;fontsz=0;bold=0;black=0;italic=0;ul=0;charset=0;pitch=0;HideIcon=0;Tag=1;AttCustom=0;OpCustom=0;TagInh=1;RzO=1;DUID=E7F601AB;ImageID=0;"/>
+					<element geometry="Left=40;Top=373;Right=355;Bottom=463;" subject="EAID_D0E1693F_2554_45d1_9EC3_8B744317F1B8" seqno="5" style="DUID=BA50DA9D;NSL=0;BCol=-1;BFol=-1;LCol=-1;LWth=-1;fontsz=0;bold=0;black=0;italic=0;ul=0;charset=0;pitch=0;HideIcon=0;Tag=1;AttCustom=0;OpCustom=0;TagInh=1;RzO=1;"/>
+					<element geometry="Left=398;Top=373;Right=702;Bottom=463;" subject="EAID_7FE1D815_70B5_467a_8F8E_A7A160F00708" seqno="6" style="DUID=AA7F7C73;NSL=0;BCol=-1;BFol=-1;LCol=-1;LWth=-1;fontsz=0;bold=0;black=0;italic=0;ul=0;charset=0;pitch=0;HideIcon=0;Tag=1;AttCustom=0;OpCustom=0;TagInh=1;RzO=1;"/>
+					<element geometry="Left=40;Top=643;Right=358;Bottom=733;" subject="EAID_581B4F10_F6C1_4cd1_AA66_0AFDE39CA434" seqno="7" style="DUID=C91E5CA5;NSL=0;BCol=-1;BFol=-1;LCol=-1;LWth=-1;fontsz=0;bold=0;black=0;italic=0;ul=0;charset=0;pitch=0;HideIcon=0;Tag=1;AttCustom=0;OpCustom=0;TagInh=1;RzO=1;"/>
+					<element geometry="Left=401;Top=648;Right=699;Bottom=738;" subject="EAID_BC0DF6FD_991C_47a7_854E_8574C4F5E897" seqno="8" style="DUID=77823162;NSL=0;BCol=-1;BFol=-1;LCol=-1;LWth=-1;fontsz=0;bold=0;black=0;italic=0;ul=0;charset=0;pitch=0;HideIcon=0;Tag=1;AttCustom=0;OpCustom=0;TagInh=1;RzO=1;"/>
+					<element geometry="Left=267;Top=217;Right=427;Bottom=294;" subject="EAID_9E310967_EC81_4b93_8B0F_854D9543968A" seqno="9" style="NSL=0;BCol=-1;BFol=-1;LCol=-1;LWth=-1;fontsz=0;bold=0;black=0;italic=0;ul=0;charset=0;pitch=0;HideIcon=0;DUID=742AF682;ImageID=0;Tag=1;AttCustom=0;OpCustom=0;TagInh=1;RzO=1;"/>
+					<element geometry="Left=39;Top=217;Right=217;Bottom=294;" subject="EAID_2E73D40B_55A1_4ae9_A03E_4507D631F12D" seqno="10" style="NSL=0;BCol=-1;BFol=-1;LCol=-1;LWth=-1;fontsz=0;bold=0;black=0;italic=0;ul=0;charset=0;pitch=0;HideIcon=0;DUID=1A1BD560;ImageID=0;Tag=1;AttCustom=0;OpCustom=0;TagInh=1;RzO=1;"/>
+					<element geometry="Left=262;Top=49;Right=422;Bottom=126;" subject="EAID_52886490_F5E2_4bd3_9A02_B9EA90DAF864" seqno="11" style="DUID=98EB5AE4;NSL=0;BCol=-1;BFol=-1;LCol=-1;LWth=-1;fontsz=0;bold=0;black=0;italic=0;ul=0;charset=0;pitch=0;HideIcon=0;Tag=1;AttCustom=0;OpCustom=0;TagInh=1;RzO=1;"/>
+					<element geometry="Left=46;Top=49;Right=209;Bottom=126;" subject="EAID_6E1B9EA6_33B5_41ca_9B0F_FE2A4FD7653B" seqno="12" style="DUID=F3117237;NSL=0;BCol=-1;BFol=-1;LCol=-1;LWth=-1;fontsz=0;bold=0;black=0;italic=0;ul=0;charset=0;pitch=0;HideIcon=0;Tag=1;AttCustom=0;OpCustom=0;TagInh=1;RzO=1;"/>
+					<element geometry="SX=0;SY=0;EX=0;EY=0;EDGE=1;$LLB=;LLT=;LMT=;LMB=;LRT=;LRB=;IRHS=;ILHS=;Path=;" subject="EAID_C33E4D91_91B7_4479_B3E2_83A1248FC2F2" style="Mode=3;EOID=77823162;SOID=E969885F;Color=-1;LWidth=0;Hidden=0;"/>
+					<element geometry="SX=0;SY=0;EX=0;EY=0;EDGE=1;$LLB=;LLT=;LMT=;LMB=;LRT=;LRB=;IRHS=;ILHS=;Path=;" subject="EAID_CAD8EC99_9550_4bfa_9A55_E4CF22AF38A8" style="Mode=3;EOID=C91E5CA5;SOID=3A985A74;Color=-1;LWidth=0;Hidden=0;"/>
+					<element geometry="SX=0;SY=0;EX=0;EY=0;EDGE=1;$LLB=;LLT=;LMT=;LMB=;LRT=;LRB=;IRHS=;ILHS=;Path=;" subject="EAID_7BF63F00_2CD1_49dc_B342_F9A5486E1D6C" style="Mode=3;EOID=AA7F7C73;SOID=6CB945EE;Color=-1;LWidth=0;Hidden=0;"/>
+					<element geometry="SX=0;SY=0;EX=0;EY=0;EDGE=1;$LLB=;LLT=;LMT=;LMB=;LRT=;LRB=;IRHS=;ILHS=;Path=;" subject="EAID_D93D92FA_105A_4a03_AC71_6F32623359B7" style="Mode=3;EOID=BA50DA9D;SOID=E7F601AB;Color=-1;LWidth=0;Hidden=0;"/>
 				</elements>
 			</diagram>
 		</diagrams>
