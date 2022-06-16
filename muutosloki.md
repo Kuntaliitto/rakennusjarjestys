@@ -5,6 +5,10 @@ id: "muutosloki"
 ---
 # Muutosloki
 
+## 16.6.2022
+* Lisätty takaisin ErityispiirteinenAlue.erityispiirteenLaji ja sen koodisto AlueenErityispiirteenLaji, mahdollinen tarve (maanlämpö, porakaivot yms.)
+* Lisätty attribuutti RakennusjärjestyksenMääräysryhmä.pykälänumero
+
 ## 10.6.2022
 
 * Lisätty OsallistumisJaArviointisuunnitelma Yhteiset tietokomponentit -paketista (assosiaatio Rakennusjärjestys-luokkaan)
