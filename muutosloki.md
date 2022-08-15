@@ -5,6 +5,9 @@ id: "muutosloki"
 ---
 # Muutosloki
 
+## 15.8.2022
+* Lisätty uusi luokka Kohdetyyppirajaus (DataType), uudelleennimetty koodisto MääräyksenAluetyyppirajoitus -> Kohdetyyppi. Uudelleennimetty ja tyypitetty attribuutti RakennusjärjestyksenMääräys.aluetyyppirajoitus:MääräyksenAluetyyppirajoitus -> RakennusjärjestyksenMääräys.kohdistus:Kohdetyyppirajaus. Uusi rakenne mahdollistaa myös ulkoisten koodistojen (esim. asemakaavan kaavamääräyslaji/käyttötarkoitus tai Rakennusluokitus) käytön määräysten kohdistamiseen.
+
 ## 16.6.2022
 * Lisätty takaisin ErityispiirteinenAlue.erityispiirteenLaji ja sen koodisto AlueenErityispiirteenLaji, mahdollinen tarve (maanlämpö, porakaivot yms.)
 * Lisätty attribuutti RakennusjärjestyksenMääräysryhmä.pykälänumero
