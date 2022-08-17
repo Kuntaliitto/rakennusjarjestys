@@ -5,6 +5,11 @@ id: "muutosloki"
 ---
 # Muutosloki
 
+## 17.8.2022
+* Poistettu koodistot AlueenErityispiirteenLaji ja OsallisenHuomionninLaji, ja vastaavasti niitä käyttäneet attribuutit RakennusjärjestyksenMääräys.vaadittuOsallisenHuomiointi ja EritysipiirteinenAlue.erityispiirteenLaji.
+* Lisätty UML-luokkien tekstimuotoinen dokumentaatio.
+* Lisätty käsitteiden kuvaukset.
+
 ## 15.8.2022
 * Lisätty uusi luokka Kohdetyyppirajaus (DataType), uudelleennimetty koodisto MääräyksenAluetyyppirajoitus -> Kohdetyyppi. Uudelleennimetty ja tyypitetty attribuutti RakennusjärjestyksenMääräys.aluetyyppirajoitus:MääräyksenAluetyyppirajoitus -> RakennusjärjestyksenMääräys.kohdistus:Kohdetyyppirajaus. Uusi rakenne mahdollistaa myös ulkoisten koodistojen (esim. asemakaavan kaavamääräyslaji/käyttötarkoitus tai Rakennusluokitus) käytön määräysten kohdistamiseen.
 
