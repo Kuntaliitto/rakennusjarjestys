@@ -270,7 +270,7 @@ Kuvaa käsitteen [Määräys](../../kasitemalli/#määräys).
 
 Nimi             | Tyyppi              | Kardinaliteetti | Kuvaus
 -----------------|---------------------|-----------------|------------------------------------
-avainsana        | [RakennusjärjestyksenAvainsana](#rakennusjärjestyksenavainsana) | 0..*  | määräystä kuvaava avainsana.
+avainsana        | [Avainsana](#avainsana) | 0..*        | määräystä kuvaava avainsana, joko tunnetusta sanastosta poimittuna tai vapaamuotoisena.
 kohdistus        | [Kohdetyyppirajoitus](#kohdetyyppirajaus) | 0..* | määräyksen rajaus koskemaan vain tiettyjä alue- tai kohdetyyppejä.
 säädöviite       | [Säädösviite](#säädösviite) | 0..* | viittaus rakennusjärjestyksen ulkopuoliseen säädökseen, joka liittyy määräysryhmän määräyksiin.
 
@@ -332,6 +332,18 @@ Nimi             | Tyyppi              | Kardinaliteetti | Kuvaus
 kohdetyyppi      | [Kohdetyyppi](#kohdetyyppi) | 0..*    | kohteen luokka.
 tarkenne         | [Koodiarvo](#koodiarvo) | 0..*        | mahdollinen kohteen luokituksen tarkenne.
 
+### Avainsana
+Stereotyyppi: DataType (tietotyyppi).
+
+Kuvaa käsitteen [Rakennusjärjestyksen määräyksen avainsana](../../kasitemalli/#rakennusjärjestyksen-määräyksen-avainsana).
+
+**Ominaisuudet**
+
+Nimi             | Tyyppi              | Kardinaliteetti | Kuvaus
+-----------------|---------------------|-----------------|------------------------------------
+sanastonTunnus   | [URI](#uri) | 0..1                 | sanaston tunnus, josta avainsana on poimittu.
+sanastonNimi     | [LanguageString](#languagestring) | 0..* | sanaston nimi, josta avainsana on poimittu.
+sana             | [LanguageString](#languagestring) | 0..* | käytetty avainsana, mahdollisesti monikielisenä.
 
 ### Koodistot
 

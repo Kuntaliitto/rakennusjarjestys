@@ -5,6 +5,9 @@ id: "muutosloki"
 ---
 # Muutosloki
 
+## 18.7.2022
+* Lisätty uusi DataType Avainsana, joka mahdollistaa avainsanojen käytön myös RakennusjärjestyksenAvainsana-koodiston ulkopuolelta. RakennusjärjestyksenMääräys.avainsana-attribuutti on nyt tyypiltään Avainasana. Lisätty rajoite RakennusjärjestyksenMääräys-luokan perittyyn attribuuttiin ```ryhmä```: se voi nyt olla tyypiltään vain RakennusjärjestyksenMääräysryhmä tai sen perillinen.
+
 ## 17.8.2022
 * Poistettu koodistot AlueenErityispiirteenLaji ja OsallisenHuomionninLaji, ja vastaavasti niitä käyttäneet attribuutit RakennusjärjestyksenMääräys.vaadittuOsallisenHuomiointi ja EritysipiirteinenAlue.erityispiirteenLaji.
 * Lisätty UML-luokkien tekstimuotoinen dokumentaatio.

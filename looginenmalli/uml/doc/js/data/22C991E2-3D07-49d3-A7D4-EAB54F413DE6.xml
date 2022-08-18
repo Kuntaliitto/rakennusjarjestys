@@ -1,2 +1,2 @@
 tocTab[tocTab.length] = new Array("0.1", "1", "«ApplicationSchema» Rakennusjärjestys", "EARoot/EA1/EA8.html", "4.png", "", "", "{471B98E1-C1CD-4d76-B9E4-B7433BF539DE}", "Package");
-tocTab[tocTab.length] = new Array("0.2", "1", "«ApplicationSchema» Yhteiset tietokomponentit", "EARoot/EA2/EA39.html", "4.png", "", "", "{8C35E32F-0806-4134-A70C-FF48008FD604}", "Package");
+tocTab[tocTab.length] = new Array("0.2", "1", "«ApplicationSchema» Yhteiset tietokomponentit", "EARoot/EA2/EA40.html", "4.png", "", "", "{8C35E32F-0806-4134-A70C-FF48008FD604}", "Package");
