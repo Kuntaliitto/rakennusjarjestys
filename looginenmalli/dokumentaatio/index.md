@@ -2,7 +2,7 @@
 layout: "default"
 description: ""
 id: "dokumentaatio"
-status: "Keskeneräinen"
+status: "Ehdotus"
 ---
 
 # Loogisen tason rakennusjärjestyksen tietomalli

@@ -2,7 +2,7 @@
 layout: "default"
 description: ""
 id: "kasitemalli"
-status: "Keskeneräinen"
+status: "Ehdotus"
 ---
 # Käsitteet ja määritelmät
 {:.no_toc}
