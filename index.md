@@ -1,7 +1,6 @@
 ---
 layout: "default"
-title: "Rakennusjärjestys"
-description: ""
+description: "Rakennusjärjestyksen tietomalli kuvaa kunnan tietomallimuotoisen rakennusjärjestyksen"
 id: "johdanto"
 ---
 # Rakennusjärjestyksen tietomalli
