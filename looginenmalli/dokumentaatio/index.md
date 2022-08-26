@@ -35,6 +35,10 @@ Looginen rakennusjärjestyksen tietomalli perustuu [ISO 19109][ISO-19109]-standa
 
 ### Rakennetun ympäristön yhteisistä komponenteista hyödynnetyt luokat
 
+#### VersioituObjekti
+
+Katso {% include common/moduleLink.html moduleId="yhteisetkomponentit" path="looginenmalli/dokumentaatio/#versioituobjekti" title="Yhteiset tietokomponentit::Versioituobjekti" %}.
+
 #### AlueidenkäyttöJaRakentamisasia
 
 Katso {% include common/moduleLink.html moduleId="yhteisetkomponentit" path="looginenmalli/dokumentaatio/#alueidenkäyttöjarakentamisasia" title="Yhteiset tietokomponentit::AlueidenkäyttöJaRakentamisasia" %}.
@@ -270,7 +274,6 @@ Kuvaa käsitteen [Määräys](../../kasitemalli/#määräys).
 
 Nimi             | Tyyppi              | Kardinaliteetti | Kuvaus
 -----------------|---------------------|-----------------|------------------------------------
-avainsana        | [Avainsana](#avainsana) | 0..*        | määräystä kuvaava avainsana, joko tunnetusta sanastosta poimittuna tai vapaamuotoisena.
 kohdistus        | [Kohdetyyppirajoitus](#kohdetyyppirajaus) | 0..* | määräyksen rajaus koskemaan vain tiettyjä alue- tai kohdetyyppejä.
 säädöviite       | [Säädösviite](#säädösviite) | 0..* | viittaus rakennusjärjestyksen ulkopuoliseen säädökseen, joka liittyy määräysryhmän määräyksiin.
 
@@ -316,6 +319,17 @@ Nimi             | Tyyppi              | Kardinaliteetti | Kuvaus
 -----------------|---------------------|-----------------|------------------------------------
 voimassaoloAika  | [TM_Period](#tmperiod) | 0..1  | suunnittelualueen voimassaoloaika aikavälinä. Voi olla avoin kummasta tahansa päästä.
 
+### KäytetytAvainsanat
+Erikoistaa luokkaa [VersioituObjekti](#versioituobjekti), stereotyyppi: FeatureType (kohdetyyppi).
+
+Kuvaa niiden avainsanojen joukon, jotka on liitetty yhteen tai useampaan rakennusjärjestysten määräyksiin.
+
+**Ominaisuudet**
+
+Nimi             | Tyyppi              | Kardinaliteetti | Kuvaus
+-----------------|---------------------|-----------------|------------------------------------
+avainsana        | [MääräyksenAvainsana](#määräyksenavainsana) | 0..*    | yhteen tai usemapaan määräykseen liitetty avainsana.
+
 ### Kohdetyyppirajaus
 Stereotyyppi: DataType (tietotyyppi).
 
@@ -332,7 +346,7 @@ Nimi             | Tyyppi              | Kardinaliteetti | Kuvaus
 kohdetyyppi      | [Kohdetyyppi](#kohdetyyppi) | 0..*    | kohteen luokka.
 tarkenne         | [Koodiarvo](#koodiarvo) | 0..*        | mahdollinen kohteen luokituksen tarkenne.
 
-### Avainsana
+### MääräyksenAvainsana
 Stereotyyppi: DataType (tietotyyppi).
 
 Kuvaa käsitteen [Rakennusjärjestyksen määräyksen avainsana](../../kasitemalli/#rakennusjärjestyksen-määräyksen-avainsana).
@@ -344,6 +358,13 @@ Nimi             | Tyyppi              | Kardinaliteetti | Kuvaus
 sanastonTunnus   | [URI](#uri) | 0..1                 | sanaston tunnus, josta avainsana on poimittu.
 sanastonNimi     | [LanguageString](#languagestring) | 0..* | sanaston nimi, josta avainsana on poimittu.
 sana             | [LanguageString](#languagestring) | 0..* | käytetty avainsana, mahdollisesti monikielisenä.
+
+**Assosiaatiot**
+
+Roolinimi        | Kohde               | Kardinaliteetti | Kuvaus
+-----------------|---------------------|-----------------|------------------------------------
+rakennusjärjestys| [Rakennusjärjestys](#rakennusjärjestys) | 1 | rakennusjärjestys, jonka määräyksiin avainsana liittyy
+määräys          | [RakennusjärjestyksenMääräys](#rakennusjärjestyksenmääräys) | 0..* | määräys, johon avainsana on liitetty
 
 ### Koodistot
 
