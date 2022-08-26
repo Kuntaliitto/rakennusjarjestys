@@ -2,7 +2,7 @@
 layout: "ea-frame"
 description: ""
 id: "uml-doc"
-defaultDiagram: "./EARoot/EA1/EA6.html"
+defaultDiagram: "./EARoot/EA1/EA8.html"
 ---
 # Loogisen tason rakennusjärjestyksen tietomalli - UML-luokkakaaviot
 UML-tietomalli ladattavissa sekä [Sparx Enterprise Architect-projektina (.feap)](../rakennusjarjestys.feap?raw=true) että [XMI-muodossa](../rakennusjarjestys.xml?raw=true).
