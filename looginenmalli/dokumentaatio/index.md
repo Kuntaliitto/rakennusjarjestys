@@ -345,6 +345,7 @@ Nimi             | Tyyppi              | Kardinaliteetti | Kuvaus
 -----------------|---------------------|-----------------|------------------------------------
 kohdetyyppi      | [Kohdetyyppi](#kohdetyyppi) | 0..*    | kohteen luokka.
 tarkenne         | [Koodiarvo](#koodiarvo) | 0..*        | mahdollinen kohteen luokituksen tarkenne.
+negaatio         | boolean             | 1               | kääntää merkityksen, jos arvo = true (muualle kuin kohdetyypin mukaiselle alueelle tai kohteeseen)
 
 ### MääräyksenAvainsana
 Stereotyyppi: DataType (tietotyyppi).
