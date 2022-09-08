@@ -5,6 +5,9 @@ id: "muutosloki"
 ---
 # Muutosloki
 
+## Versio 1.0 (8.9.2022)
+* Korjattu kirjoitusvirheitä loogisen tietomallin dokumentaatiossa.
+
 ## 26.8.2022
 * Lisätty uusi attribuutti ```RakennusjärjestyksenMääräys.määräysteksti```, jotta kuhunkin määräykseen liitettävää määräystekstiä varten ei tarvitse käyttää ```RakennusjärjestyksenMääräys.ominaisuus``` -attribuuttia suureen arvona "Määräysteksti".
 * Muutettu avainsanoituksen mallia siten, että määräykseen liitetyt avainsanat eivät ole osa RakennusjärjestyksenMääräys-luokkaa, vaan määräyksiin viitataan ulkopäin MääräyksenAvainsana-tietotyypin kautta. Näin hyväksyttyyn rakennusjärjestyksen määräykseen voidaan myöhemmin liittää uusia avainsanoja tai poistaa niintä muuttamatta itse määräysten tietosisältöä. Lisätty uusi kaavio "Avainsanat" kuvaamaan avainsanojen käyttöä.
