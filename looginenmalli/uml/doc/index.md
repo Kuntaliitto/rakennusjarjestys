@@ -1,6 +1,6 @@
 ---
 layout: "ea-frame"
-description: ""
+description: "Rakennusjärjestyksen tietomallin UML-luokkakaaviot"
 id: "uml-doc"
 defaultDiagram: "./EARoot/EA1/EA8.html"
 ---

@@ -1,6 +1,6 @@
 ---
 layout: "default"
-description: ""
+description: "Rakennusjärjestyksen tietomallin käsitemalli"
 id: "kasitemalli"
 status: "Ehdotus"
 ---

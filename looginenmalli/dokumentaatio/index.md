@@ -1,6 +1,6 @@
 ---
 layout: "default"
-description: ""
+description: "Rakennusjärjestyksen tietomallin luokkien kuvaus"
 id: "dokumentaatio"
 status: "Ehdotus"
 ---

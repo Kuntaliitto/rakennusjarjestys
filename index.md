@@ -11,5 +11,3 @@ Rakennusjärjestyksen loogisen tason tietomallin käyttöönotto tietojärjestel
 
 Rakennusjärjestyksen tietomallia on kehitetty seuraavissa hankkeissa ja projekteissa:
 * Kuntaliiton hanke Rakennusjärjestyksen tietomalli 2022 (YM:n rahoitus), toteuttaja Spatineo Oy
-
-Rakennusjärjestelmän tietomallin laadintatyö on vielä kesken.
