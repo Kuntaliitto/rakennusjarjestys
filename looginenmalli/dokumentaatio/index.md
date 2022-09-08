@@ -275,7 +275,7 @@ Kuvaa käsitteen [Määräys](../../kasitemalli/#määräys).
 Nimi             | Tyyppi              | Kardinaliteetti | Kuvaus
 -----------------|---------------------|-----------------|------------------------------------
 kohdistus        | [Kohdetyyppirajoitus](#kohdetyyppirajaus) | 0..* | määräyksen rajaus koskemaan vain tiettyjä alue- tai kohdetyyppejä.
-säädöviite       | [Säädösviite](#säädösviite) | 0..* | viittaus rakennusjärjestyksen ulkopuoliseen säädökseen, joka liittyy määräysryhmän määräyksiin.
+säädösviite       | [Säädösviite](#säädösviite) | 0..* | viittaus rakennusjärjestyksen ulkopuoliseen säädökseen, joka liittyy määräysryhmän määräyksiin.
 
 **Assosiaatiot**
 
