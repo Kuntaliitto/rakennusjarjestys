@@ -255,7 +255,7 @@ Nimi             | Tyyppi              | Kardinaliteetti | Kuvaus
 -----------------|---------------------|-----------------|------------------------------------
 pykälänumero     | [CharacterString](#characterstring) | 0..1  | määräysryhmälle mahdollisesti annettu pykälänumero. Voidaan käyttää ryhmien esittämiseen numerojärjestyksessä.
 aihepiiri        | [RakennusjärjestyksenAihepiiri](#rakennusjärjestyksenaihepiiri) | 0..* | aihepiirit, joihin ryhmän määräykset liittyvät.
-säädöviite       | [Säädösviite](#säädösviite) | 0..* | viittaus rakennusjärjestyksen ulkopuoliseen säädökseen, joka liittyy määräysryhmän määräyksiin.
+säädösviite       | [Säädösviite](#säädösviite) | 0..* | viittaus rakennusjärjestyksen ulkopuoliseen säädökseen, joka liittyy määräysryhmän määräyksiin.
 
 **Assosiaatiot**
 
