@@ -5,7 +5,11 @@ id: "muutosloki"
 ---
 # Muutosloki
 
-## Versio 1.0 (8.9.2022)
+## Versio 1.0.1 (9.9.2022)
+* Korjattu luokan ```RakennusjärjestyksenMääräys``` attribuutin ```kohdistus``` nimi muotoon ```kohdetyyppi```, koska luokalla oli jo peritty assosiaatio nimeltä ```kohdistus```.
+* Lisätty puuttuneita rajoitteita luokkiin ```RakennusjärjestyksenMääräys```, ```ErityispiirteinenAlue``` ja ```Suunnittelutarvealue```.
+
+## Versio 1.0.0 (8.9.2022)
 * Korjattu kirjoitusvirheitä loogisen tietomallin dokumentaatiossa.
 
 ## 26.8.2022

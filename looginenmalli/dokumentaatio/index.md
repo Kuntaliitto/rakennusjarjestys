@@ -274,7 +274,7 @@ Kuvaa käsitteen [Määräys](../../kasitemalli/#määräys).
 
 Nimi             | Tyyppi              | Kardinaliteetti | Kuvaus
 -----------------|---------------------|-----------------|------------------------------------
-kohdistus        | [Kohdetyyppirajoitus](#kohdetyyppirajaus) | 0..* | määräyksen rajaus koskemaan vain tiettyjä alue- tai kohdetyyppejä.
+kohdetyyppi        | [Kohdetyyppirajoitus](#kohdetyyppirajaus) | 0..* | määräyksen rajaus koskemaan vain tiettyjä alue- tai kohdetyyppejä.
 säädösviite       | [Säädösviite](#säädösviite) | 0..* | viittaus rakennusjärjestyksen ulkopuoliseen säädökseen, joka liittyy määräysryhmän määräyksiin.
 
 **Assosiaatiot**
@@ -285,6 +285,7 @@ rakennusjärjestys     | [Rakennusjärjestys](#rakennusjärjestys) | 1 | rakennu
 
 Peritty assosiaatio ```ryhmä``` on rajoitettu viittaamaan vain RakennusjärjestyksenMääräysryhmä-luokan tai sen aliluokkien objekteihin.
 
+Peritty assosiaatio ```kohdistus``` on rajoitettu viittaamaan vain ErityispiireinenAlue tai Suunnittelutarvealue-luokkien tai niiden aliluokkien objekteihin.
 
 ### MääräysSuunnittelutarvealueista
 Erikoistaa luokkaa [RakennusjärjestyksenMääräys](#rakennusjärjestyksenmääräys), stereotyyppi: FeatureType (kohdetyyppi).
@@ -308,10 +309,14 @@ Erikoistaa luokkaa [RakennetunYmpäristönKohde](#rakennetunympäristönkohde), 
 
 Kuvaa käsitteen [Erityispiirteinen alue](../../kasitemalli/#erityispiiteinen-alue).
 
+Peritty ominaisuus ```geometria``` on rajoitettu pakolliseksi.
+
 ### Suunnittelutarvealue
 Erikoistaa luokkaa [RakennetunYmpäristönKohde](#rakennetunympäristönkohde), stereotyyppi: FeatureType (kohdetyyppi).
 
 Kuvaa käsitteen [Suunnittelutarvealue](../../kasitemalli/#suunnittelutarvealue).
+
+Peritty ominaisuus ```geometria``` on rajoitettu pakolliseksi.
 
 **Ominaisuudet**
 
